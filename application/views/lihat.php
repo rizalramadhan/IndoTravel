@@ -4,6 +4,7 @@
 	<title></title>
 </head>
 <body>
+<center>
 	<a href="http://localhost/IndoTravel/index.php/user/add">Tambah</a>
 	<table border="1">
 		<tr><!--td ke ssamping tr kebawah-->
@@ -36,5 +37,6 @@
 		<?php endforeach ?>
 
 	</table>
+</center>
 </body>
 </html>

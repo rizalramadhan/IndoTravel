@@ -33,11 +33,12 @@ class User extends CI_Controller {
 		if ($insert) {
 
 
-            echo "sukses";//jika proses memasukkan berhasil maka prin sukses dan sebaliknya
+            redirect('user','refresh');
+
 
         } else {
 
-            echo "gagal";
+            redirect('user/add','refresh');
 
         }
 	}
@@ -111,7 +112,7 @@ class User extends CI_Controller {
 	}
 
 	public function gantikan2()//belum jadi
-	{
+	{ 
 		
 		
 		if ($this->input->post('submit'))

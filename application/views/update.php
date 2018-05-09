@@ -4,7 +4,8 @@
 	
 </head>
 <body style="background-color: #666666;">
-<form method="post" action="http://localhost/IndoTravel/index.php/user/actionadd">
+<?php foreach($isi->result() as $key): ?>
+<form method="post" action="http://localhost/IndoTravel/index.php/user/gantikan/<?php echo $key->id ?>">
 	
 	<div class="limiter">
 		<div class="container-login100">
@@ -105,6 +106,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+<?php endforeach ?>
 
 </body>
 </html>
